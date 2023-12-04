@@ -1,5 +1,5 @@
 body {
-  background-image: url(background.jpg);
+  background-image: url(/Images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -28,39 +28,17 @@ body {
   font-size: 210%;
 }
 
-.navbar ul li {
-  list-style: none;
+.navbar h2 {
   display: inline-block;
   margin: 0 20px;
   position: relative;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 150%;
-}
-
-.navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #d3a7ae;
 }
 
-.navbar ul li::after {
-  content: '';
-  height: 3px;
-  width: 100%;
-  background: #012302;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s
-}
-
-.navbar ul li:hover::after {
-  width: 100%;
-  background: #012302;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s
-}
 /*Nav End*/
 /*Description*/
 .content {
@@ -125,7 +103,7 @@ img {
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(122, 214, 104, 0.486);
 }
 
 .cards {
@@ -154,7 +132,7 @@ img {
 }
 
 .card {
-  background-color: white;
+  background-color: #d3a7ae;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -169,11 +147,12 @@ img {
 
 .card_title {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
   margin: 0px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .card_text {
@@ -189,3 +168,10 @@ img {
   margin-top: 35px;
   text-align: center;
 }
+
+/*footer style*/
+.footer {
+
+  height: auto;
+}
+/*Footer End*/
