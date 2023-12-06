@@ -1,58 +1,196 @@
 body {
-    background-color: #aeaf5a;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+  background-color: #aeaf5a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*NavBar*/
+.container-fluid {
+  background-color: rgba(135, 176, 84, 0.5);
+  border: 2px solid white;
+  margin-top: 2%;
+}
+
+.title {
+  font-size: 250%;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 230%;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+  background-color: #d3a7ae;
+}
+
+/*NavBar End*/
+
+/*Life / Early Years*/
+hr {
+  margin-top: 3%;
+  color: white;
+}
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+.content {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  padding: 50px 40px;
+}
+
+.title1 {
+  color: #012302;
+  text-shadow: 2px 2px 2px #ffffff;
+  font-size: 350%;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.btn:hover {
+  background-color: rgba(122, 214, 104, 0.486);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
   }
-  
-  .container-fluid {
-    background-color: rgba(135, 176, 84, 0.5);
-    border: 2px solid white;
-    margin-top: 2%;
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
   }
-  
-  .title {
-    font-size: 250%;
-    font-family: 'Nanum Brush Script', cursive;
-  }
-  
-  .navbar {
-    width: 85%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 230%;
-  }
-  
-  .navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  .navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: white;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-  }
-  
-  .navbar ul li:hover::after {
-    width: 100%;
-    background-color: #d3a7ae;
-  }  
+}
+
+.card {
+  background-color: #203755;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px black;
+
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #203755 40%, #203755 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+}
+
+.card_text {
+  padding: 5px 0;
+  text-align: center;
+  margin-top: 3%;
+  color: white;
+  text-shadow: 2px 2px 2px #3b3b8c;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Life / Early Years End*/
+/*Greatest Accomplishments*/
+
+/*Greatest Accomplishments End*/
